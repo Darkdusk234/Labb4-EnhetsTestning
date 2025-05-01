@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            LibrarySystem library = new LibrarySystem();
+            UserInterface.DisplayMenu(library);
         }
     }
 }
