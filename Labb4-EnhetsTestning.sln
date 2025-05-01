@@ -5,6 +5,8 @@ VisualStudioVersion = 17.13.35931.197 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Labb4-EnhetsTestning", "Labb4-EnhetsTestning\Labb4-EnhetsTestning.csproj", "{BE649732-5A4B-4154-A1BD-1CF5106ED890}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Labb4-EnhetsTesting-Test", "Labb4-EnhetsTesting-Test\Labb4-EnhetsTesting-Test.csproj", "{59FAD75C-2F12-4E09-9034-6EF17BE97297}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{BE649732-5A4B-4154-A1BD-1CF5106ED890}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE649732-5A4B-4154-A1BD-1CF5106ED890}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE649732-5A4B-4154-A1BD-1CF5106ED890}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59FAD75C-2F12-4E09-9034-6EF17BE97297}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59FAD75C-2F12-4E09-9034-6EF17BE97297}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59FAD75C-2F12-4E09-9034-6EF17BE97297}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59FAD75C-2F12-4E09-9034-6EF17BE97297}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
