@@ -14,4 +14,26 @@ public class LibrarySystemTests
 
         Assert.IsTrue(actual);
     }
+
+    [TestMethod]
+    public void AddBook_AddBookWithoutISBNNumber_False()
+    {
+        var library = new LibrarySystem();
+        var book = new Book("Wolfbrothers", "Maria Flint", null, 2001);
+
+        var actual = library.AddBook(book);
+
+        Assert.IsFalse(actual);
+    }
+
+    [TestMethod]
+    public void AddBook_AddBookWithISBNAlreadyInSystem_False()
+    {
+        var library = new LibrarySystem();
+        var book = new Book("Wolfbrothers", "Maria Flint", "9780451524935", 2001);
+
+        var actual = library.AddBook(book);
+
+        Assert.IsFalse(actual);
+    }
 }
