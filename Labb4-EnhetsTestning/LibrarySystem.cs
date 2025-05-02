@@ -26,6 +26,10 @@ namespace Labb4_EnhetsTestning
 
         public bool AddBook(Book book)
         {
+            if(book.ISBN == null || book.ISBN.Length == 0)
+            {
+                return false;
+            }
             books.Add(book);
             return true;
         }
