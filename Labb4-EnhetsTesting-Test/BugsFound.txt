@@ -1,0 +1,3 @@
+﻿[LibrarySystem]/[AddBook]/[Rad 29]: Finns ingen check för om det finns ett ISBN nummer för boken som ska läggas till.
+Boken läggs till även om den inte ska det.
+
