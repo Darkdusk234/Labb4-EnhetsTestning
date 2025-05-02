@@ -30,6 +30,10 @@ namespace Labb4_EnhetsTestning
             {
                 return false;
             }
+            else if(SearchByISBN(book.ISBN) != null)
+            {
+                return false;
+            }
             books.Add(book);
             return true;
         }
