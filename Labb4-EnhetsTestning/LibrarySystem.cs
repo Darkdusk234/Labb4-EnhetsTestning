@@ -30,7 +30,11 @@ namespace Labb4_EnhetsTestning
             {
                 return false;
             }
-            else if(SearchByISBN(book.ISBN) != null)
+            else if(!int.TryParse(book.ISBN, out int result))
+            {
+                return false;
+            }
+            else if (SearchByISBN(book.ISBN) != null)
             {
                 return false;
             }
