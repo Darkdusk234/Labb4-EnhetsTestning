@@ -1,5 +1,8 @@
-﻿[LibrarySystem]/[AddBook]/[Rad 29]: Finns ingen check för om det finns ett ISBN nummer för boken som ska läggas till.
+﻿[LibrarySystem]/[AddBook]/[Rad 30]: Finns ingen check för om det finns ett ISBN nummer för boken som ska läggas till.
 Boken läggs till även om den inte ska det.
 
-[LibrarySystem]/[AddBook]/[Rad 29]: Finns ingen check för om ISBN numret för boken som ska läggas till redan finns i systemet.
+[LibrarySystem]/[AddBook]/[Rad 30]: Finns ingen check för om ISBN nummret för boken som ska läggas till redan finns i systemet.
+Boken läggs till även om den inte ska det.
+
+[LibrarySystem]/[AddBook]/[Rad 30]: Finns ingen check för om ISBN nummret för boken innehåller bokstäver eller symboler.
 Boken läggs till även om den inte ska det.
