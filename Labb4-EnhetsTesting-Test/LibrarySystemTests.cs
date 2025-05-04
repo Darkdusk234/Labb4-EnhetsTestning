@@ -57,4 +57,14 @@ public class LibrarySystemTests
 
         Assert.IsTrue(actual);
     }
+
+    [TestMethod]
+    public void RemoveBook_RemoveBookWithNonExistingISBN_False()
+    {
+        var library = new LibrarySystem();
+
+        var actual = library.RemoveBook("dajjgajfahgkj");
+
+        Assert.IsFalse(actual);
+    }
 }
