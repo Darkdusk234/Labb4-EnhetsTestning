@@ -37,7 +37,6 @@ public class LibrarySystemTests
         Assert.IsFalse(actual);
     }
 
-    //Make a method to test if ISBN number has letters in it
     [TestMethod]
     public void AddBook_AddBookWithLettersInISBNNumber_False()
     {
@@ -47,5 +46,14 @@ public class LibrarySystemTests
         var actual = library.AddBook(book);
 
         Assert.IsFalse(actual);
+    }
+
+    public void RemoveBook_RemoveBookFromSystem_True()
+    {
+        var library = new LibrarySystem();
+
+        var actual = library.RemoveBook("9780451524935");
+
+        Assert.IsTrue(actual);
     }
 }
