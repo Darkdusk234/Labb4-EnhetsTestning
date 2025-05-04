@@ -30,7 +30,7 @@ namespace Labb4_EnhetsTestning
             {
                 return false;
             }
-            else if(!int.TryParse(book.ISBN, out int result))
+            else if(!long.TryParse(book.ISBN, out long result))
             {
                 return false;
             }
