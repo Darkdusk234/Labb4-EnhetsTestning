@@ -6,3 +6,6 @@ Boken läggs till även om den inte ska det.
 
 [LibrarySystem]/[AddBook]/[Rad 30]: Finns ingen check för om ISBN nummret för boken innehåller bokstäver eller symboler.
 Boken läggs till även om den inte ska det.
+
+[LibrarySystem]/[RemoveBook/[Rad 74]: Finns ingen check för om boken som ska tas bort är utlånad eller inte.
+Boken tas bort även om den är utlånad.
