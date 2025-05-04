@@ -67,4 +67,15 @@ public class LibrarySystemTests
 
         Assert.IsFalse(actual);
     }
+
+    [TestMethod]
+    public void RemoveBook_RemoveBorrowedBook_False()
+    {
+        var library = new LibrarySystem();
+        library.BorrowBook("9780451524935");
+
+        var actual = library.RemoveBook("9780451524935");
+
+        Assert.IsFalse(actual);
+    }
 }
