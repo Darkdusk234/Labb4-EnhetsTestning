@@ -48,6 +48,7 @@ public class LibrarySystemTests
         Assert.IsFalse(actual);
     }
 
+    [TestMethod]
     public void RemoveBook_RemoveBookFromSystem_True()
     {
         var library = new LibrarySystem();
