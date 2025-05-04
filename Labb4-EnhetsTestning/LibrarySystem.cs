@@ -45,7 +45,7 @@ namespace Labb4_EnhetsTestning
         public bool RemoveBook(string isbn)
         {
             Book book = SearchByISBN(isbn);
-            if (book != null)
+            if (book != null && !book.IsBorrowed)
             {
                 books.Remove(book);
                 return true;
