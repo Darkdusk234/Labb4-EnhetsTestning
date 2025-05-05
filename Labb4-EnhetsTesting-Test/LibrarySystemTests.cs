@@ -1,4 +1,5 @@
 using Labb4_EnhetsTestning;
+using Newtonsoft.Json;
 namespace Labb4_EnhetsTesting_Test;
 
 [TestClass]
@@ -77,5 +78,16 @@ public class LibrarySystemTests
         var actual = library.RemoveBook("9780451524935");
 
         Assert.IsFalse(actual);
+    }
+
+    [TestMethod]
+    public void SearchByISBN_SearchForAnExistingISBNNumber_BookWithThatISBNNumber()
+    {
+        var library = new LibrarySystem();
+        var expectedBook = new Book("1984", "George Orwell", "9780451524935", 1949);
+
+        var actual = library.SearchByISBN("9780451524935");
+
+        Assert.IsTrue(JsonConvert.SerializeObject(expectedBook) == JsonConvert.SerializeObject(actual));
     }
 }
