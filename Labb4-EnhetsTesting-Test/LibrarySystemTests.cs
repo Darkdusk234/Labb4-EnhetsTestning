@@ -100,4 +100,14 @@ public class LibrarySystemTests
 
         Assert.IsNull(actual);
     }
+
+    [TestMethod]
+    public void SearchByISBN_SearchWithNonNumbersInISBNNumber_Null()
+    {
+        var library = new LibrarySystem();
+
+        var actual = library.SearchByISBN("90481095718DSAdd");
+
+        Assert.IsNull(actual);
+    }
 }
