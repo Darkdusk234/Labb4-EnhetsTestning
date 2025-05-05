@@ -163,7 +163,7 @@ public class LibrarySystemTests
     }
 
     [TestMethod]
-    public void SearchByTitle_SearchForExistingTitle_ListOfBooksWithThatTitle()
+    public void SearchByTitle_SearchWithExistingTitle_ListOfBooksWithThatTitle()
     {
         var library = new LibrarySystem();
 
