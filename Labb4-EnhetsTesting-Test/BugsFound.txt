@@ -9,3 +9,6 @@ Boken läggs till även om den inte ska det.
 
 [LibrarySystem]/[RemoveBook/[Rad 74]: Finns ingen check för om boken som ska tas bort är utlånad eller inte.
 Boken tas bort även om den är utlånad.
+
+[LibrarySystem]/[SearchByISBN/[Rad 58]: Finns ingen check för att kolla delmatchningar.
+Boken returneras inte även om det finns ett ISBN nummer som delvis matchas.
