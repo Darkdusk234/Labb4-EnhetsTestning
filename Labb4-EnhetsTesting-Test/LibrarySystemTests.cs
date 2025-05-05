@@ -161,4 +161,14 @@ public class LibrarySystemTests
 
         Assert.IsTrue(actual.Count != 0);
     }
+
+    [TestMethod]
+    public void SearchByTitle_SearchForExistingTitle_ListOfBooksWithThatTitle()
+    {
+        var library = new LibrarySystem();
+
+        var actual = library.SearchByTitle("1984");
+
+        Assert.IsTrue(actual.Count != 0);
+    }
 }
