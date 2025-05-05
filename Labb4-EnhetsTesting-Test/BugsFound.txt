@@ -15,3 +15,6 @@ Boken returneras inte även om det finns ett ISBN nummer som delvis matchas.
 
 [LibrarySystem]/[SearchByTitle/[Rad 63]: Finns ingen check för att kolla om inputten är stora bokstäver eller inte.
 Boken returneras inte även om det finns en bok med den titeln då metoden är känslig för skiftläge.
+
+[LibrarySystem]/[SearchByTitle/[Rad 63]: Finns ingen check för att kolla delvismatchingar.
+Böckerna returneras inte även om det finns böcker som innehåller den inputtade strängen som delvis matchar deras titel.
