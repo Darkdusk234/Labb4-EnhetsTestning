@@ -112,6 +112,17 @@ public class LibrarySystemTests
     }
 
     [TestMethod]
+    public void SearchByISBN_SearchWithOnlyPartOfAnISBN_FirstBookInSystemWithThatPartOFISBN()
+    {
+        var library = new LibrarySystem();
+        var expectedBook = new Book("1984", "George Orwell", "9780451524935", 1949);
+
+        var actual = library.SearchByISBN("97804");
+
+        Assert.IsTrue(JsonConvert.SerializeObject(expectedBook) == JsonConvert.SerializeObject(actual));
+    }
+
+    [TestMethod]
     public void SearchByAuthor_SearchWithExistingAuthor_ListOfBooksFromAuthor()
     {
         var library = new LibrarySystem();
