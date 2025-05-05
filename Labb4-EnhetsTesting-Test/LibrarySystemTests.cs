@@ -90,4 +90,14 @@ public class LibrarySystemTests
 
         Assert.IsTrue(JsonConvert.SerializeObject(expectedBook) == JsonConvert.SerializeObject(actual));
     }
+
+    [TestMethod]
+    public void SearchByISBN_SearchWithAnNonExistantISBNNumber_Null()
+    {
+        var library = new LibrarySystem();
+
+        var actual = library.SearchByISBN("941758197598175");
+
+        Assert.IsNull(actual);
+    }
 }
