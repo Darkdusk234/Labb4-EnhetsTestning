@@ -130,4 +130,14 @@ public class LibrarySystemTests
 
         Assert.IsTrue(actual.Count == 0);
     }
+
+    [TestMethod]
+    public void SearchByAuthor_SearchWithExistingAuthorWithBigLetters_ListOfBooksFromAuthor()
+    {
+        var library = new LibrarySystem();
+
+        var actual = library.SearchByAuthor("GEORGE ORWELL");
+
+        Assert.IsTrue(actual.Count != 0);
+    }
 }
