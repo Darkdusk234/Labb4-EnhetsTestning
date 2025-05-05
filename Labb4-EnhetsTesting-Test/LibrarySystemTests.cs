@@ -140,4 +140,14 @@ public class LibrarySystemTests
 
         Assert.IsTrue(actual.Count != 0);
     }
+
+    [TestMethod]
+    public void SearchByAuthor_SearchWithOnlyFirstNameOfAuthor_ListOfBooksFromAuthorsWithThatName()
+    {
+        var library = new LibrarySystem();
+
+        var actual = library.SearchByAuthor("George");
+
+        Assert.IsTrue(actual.Count != 0);
+    }
 }
