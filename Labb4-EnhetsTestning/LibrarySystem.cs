@@ -60,7 +60,7 @@ namespace Labb4_EnhetsTestning
 
         public List<Book> SearchByTitle(string title)
         {
-            return books.Where(b => b.Title == title).ToList();
+            return books.Where(b => b.Title.Contains(title, StringComparison.OrdinalIgnoreCase)).ToList();
         }
 
         public List<Book> SearchByAuthor(string author)
