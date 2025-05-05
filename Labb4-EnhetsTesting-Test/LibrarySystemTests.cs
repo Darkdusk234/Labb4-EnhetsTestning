@@ -120,4 +120,14 @@ public class LibrarySystemTests
 
         Assert.IsTrue(actual.Count != 0);
     }
+
+    [TestMethod]
+    public void SearchByAuthor_SearchWithNonExistingAuthor_EmptyList()
+    {
+        var library = new LibrarySystem();
+
+        var actual = library.SearchByAuthor("Maria Carry");
+
+        Assert.IsTrue(actual.Count == 0);
+    }
 }
