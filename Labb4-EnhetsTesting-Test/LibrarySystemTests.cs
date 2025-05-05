@@ -187,7 +187,7 @@ public class LibrarySystemTests
     {
         var library = new LibrarySystem();
 
-        var actual = library.SearchByTitle("TO KILL A NOCKINGBIRD");
+        var actual = library.SearchByTitle("TO KILL A MOCKINGBIRD");
 
         Assert.IsTrue(actual.Count != 0);
     }
