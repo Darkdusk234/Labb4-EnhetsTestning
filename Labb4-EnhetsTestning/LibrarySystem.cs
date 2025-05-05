@@ -55,7 +55,7 @@ namespace Labb4_EnhetsTestning
 
         public Book SearchByISBN(string isbn)
         {
-            return books.FirstOrDefault(b => b.ISBN == isbn);
+            return books.Where(b => b.ISBN.Contains(isbn)).FirstOrDefault();
         }
 
         public List<Book> SearchByTitle(string title)
