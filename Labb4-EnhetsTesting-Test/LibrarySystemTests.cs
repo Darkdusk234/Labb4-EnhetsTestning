@@ -242,4 +242,14 @@ public class LibrarySystemTests
 
         Assert.IsTrue(actual);
     }
+
+    [TestMethod]
+    public void BorrowBook_NonExistingISBNNumberInputted_False()
+    {
+        var library = new LibrarySystem();
+
+        var actual = library.BorrowBook("7418659813675987");
+
+        Assert.IsFalse(actual);
+    }
 }
