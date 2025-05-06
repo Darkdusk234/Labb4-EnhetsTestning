@@ -231,4 +231,15 @@ public class LibrarySystemTests
 
         Assert.IsTrue(actual.Count != 0);
     }
+
+    [TestMethod]
+    public void BorrowBook_ExistingISBNNumberInputted_True()
+    {
+        var library = new LibrarySystem();
+        var isbn = "9780451524935";
+
+        var actual = library.BorrowBook(isbn);
+
+        Assert.IsTrue(actual);
+    }
 }
