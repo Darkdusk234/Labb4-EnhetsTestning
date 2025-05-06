@@ -13,6 +13,9 @@ Boken tas bort även om den är utlånad.
 [LibrarySystem]/[SearchByISBN/[Rad 58]: Finns ingen check för att kolla delmatchningar.
 Boken returneras inte även om det finns ett ISBN nummer som delvis matchas.
 
+[LibrarySystem]/[SearchByISBN/[Rad 58]: Finns ingen check för att kolla om ISBN numret är en tom sträng.
+Returnerar en bok även om den inte ska det eftersom sök materialet är en tom sträng.
+
 [LibrarySystem]/[SearchByTitle/[Rad 63]: Finns ingen check för att kolla om inputten är stora bokstäver eller inte.
 Boken returneras inte även om det finns en bok med den titeln då metoden är känslig för skiftläge.
 
