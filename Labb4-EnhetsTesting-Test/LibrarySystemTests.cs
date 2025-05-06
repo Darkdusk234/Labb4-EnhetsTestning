@@ -203,6 +203,16 @@ public class LibrarySystemTests
     }
 
     [TestMethod]
+    public void SearchByTitle_SearchWithEmptyString_Null()
+    {
+        var library = new LibrarySystem();
+
+        var actual = library.SearchByTitle("");
+
+        Assert.IsNull(actual);
+    }
+
+    [TestMethod]
     public void SearchByTitle_SearchWithExistingTitleWithOnlyCapitalLetters_ListOfBooksWithThatTitle()
     {
         var library = new LibrarySystem();
