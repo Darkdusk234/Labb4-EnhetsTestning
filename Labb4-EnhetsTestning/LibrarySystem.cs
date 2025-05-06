@@ -69,7 +69,11 @@ namespace Labb4_EnhetsTestning
 
         public List<Book> SearchByAuthor(string author)
         {
-            return books.Where(b => b.Author.Contains(author, StringComparison.OrdinalIgnoreCase)).ToList();
+            if (author != null && author != String.Empty)
+            {
+                return books.Where(b => b.Author.Contains(author, StringComparison.OrdinalIgnoreCase)).ToList();
+            }
+            return null;
         }
 
         public bool BorrowBook(string isbn)
