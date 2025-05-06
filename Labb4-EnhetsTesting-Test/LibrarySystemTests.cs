@@ -102,6 +102,16 @@ public class LibrarySystemTests
     }
 
     [TestMethod]
+    public void SearchByISBN_SearchWithEmptyString_Null()
+    {
+        var library = new LibrarySystem();
+
+        var actual = library.SearchByISBN("");
+
+        Assert.IsNull(actual);
+    }
+
+    [TestMethod]
     public void SearchByISBN_SearchWithNonNumbersInISBNNumber_Null()
     {
         var library = new LibrarySystem();
