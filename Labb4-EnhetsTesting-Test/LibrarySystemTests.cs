@@ -153,6 +153,16 @@ public class LibrarySystemTests
     }
 
     [TestMethod]
+    public void SearchByAuthor_SearchWithEmptyString_Null()
+    {
+        var library = new LibrarySystem();
+
+        var actual = library.SearchByAuthor("");
+
+        Assert.IsNull(actual);
+    }
+
+    [TestMethod]
     public void SearchByAuthor_SearchWithExistingAuthorWithBigLetters_ListOfBooksFromAuthor()
     {
         var library = new LibrarySystem();
