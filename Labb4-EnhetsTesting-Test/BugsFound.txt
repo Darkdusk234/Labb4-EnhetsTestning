@@ -21,3 +21,6 @@ Boken returneras inte även om det finns en bok med den titeln då metoden är k
 
 [LibrarySystem]/[SearchByTitle/[Rad 63]: Finns ingen check för att kolla delvismatchingar.
 Böckerna returneras inte även om det finns böcker som innehåller den inputtade strängen som delvis matchar deras titel.
+
+[LibrarySystem]/[SearchByAuthor/[Rad 72]: Finns ingen check för att kolla om Author strängen är en tom sträng.
+Returnerar en bok även om den inte ska det eftersom sök materialet är en tom sträng.
