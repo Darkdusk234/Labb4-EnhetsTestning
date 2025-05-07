@@ -263,4 +263,15 @@ public class LibrarySystemTests
 
         Assert.IsTrue(actual.IsBorrowed);
     }
+
+    [TestMethod]
+    public void BorrowBook_BorrowingAAlreadyBorrowedBook_False()
+    {
+        var library = new LibrarySystem();
+
+        library.BorrowBook("9780451524935");
+        var actual = library.BorrowBook("9780451524935");
+
+        Assert.IsFalse(actual);
+    }
 }
