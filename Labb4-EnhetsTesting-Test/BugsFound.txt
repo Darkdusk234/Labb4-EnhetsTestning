@@ -7,23 +7,25 @@ Boken läggs till även om den inte ska det.
 [LibrarySystem]/[AddBook]/[Rad 30]: Finns ingen check för om ISBN nummret för boken innehåller bokstäver eller symboler.
 Boken läggs till även om den inte ska det.
 
-[LibrarySystem]/[RemoveBook/[Rad 51]: Finns ingen check för om boken som ska tas bort är utlånad eller inte.
+[LibrarySystem]/[RemoveBook]/[Rad 51]: Finns ingen check för om boken som ska tas bort är utlånad eller inte.
 Boken tas bort även om den är utlånad.
 
-[LibrarySystem]/[SearchByISBN/[Rad 58]: Finns ingen check för att kolla delmatchningar.
+[LibrarySystem]/[SearchByISBN]/[Rad 58]: Finns ingen check för att kolla delmatchningar.
 Boken returneras inte även om det finns ett ISBN nummer som delvis matchas.
 
-[LibrarySystem]/[SearchByISBN/[Rad 58]: Finns ingen check för att kolla om ISBN numret är en tom sträng.
+[LibrarySystem]/[SearchByISBN]/[Rad 58]: Finns ingen check för att kolla om ISBN numret är en tom sträng.
 Returnerar en bok även om den inte ska det eftersom sök materialet är en tom sträng.
 
-[LibrarySystem]/[SearchByTitle/[Rad 63]: Finns ingen check för att kolla om inputten är stora bokstäver eller inte.
+[LibrarySystem]/[SearchByTitle]/[Rad 63]: Finns ingen check för att kolla om inputten är stora bokstäver eller inte.
 Boken returneras inte även om det finns en bok med den titeln då metoden är känslig för skiftläge.
 
-[LibrarySystem]/[SearchByTitle/[Rad 63]: Finns ingen check för att kolla delvismatchingar.
+[LibrarySystem]/[SearchByTitle]/[Rad 63]: Finns ingen check för att kolla delvismatchingar.
 Böckerna returneras inte även om det finns böcker som innehåller den inputtade strängen som delvis matchar deras titel.
 
-[LibrarySystem]/[SearchByTitle/[Rad 63]: Finns ingen check för att kolla om Title strängen är en tom sträng.
+[LibrarySystem]/[SearchByTitle]/[Rad 63]: Finns ingen check för att kolla om Title strängen är en tom sträng.
 Returnerar en bok även om den inte ska det eftersom sök materialet är en tom sträng.
 
-[LibrarySystem]/[SearchByAuthor/[Rad 72]: Finns ingen check för att kolla om Author strängen är en tom sträng.
+[LibrarySystem]/[SearchByAuthor]/[Rad 72]: Finns ingen check för att kolla om Author strängen är en tom sträng.
 Returnerar en bok även om den inte ska det eftersom sök materialet är en tom sträng.
+
+[LibrarySystem]/[ReturnBook]/[Rad 101]: Metoden nollställer inte utlåningsdatumet av den returnerade boken.
