@@ -313,12 +313,14 @@ public class LibrarySystemTests
     public void ReturnBook_ExistingISBNNumberOfABorrowedBookInputtedCheckIfReturnedBooksBorrowDateIsReset_Null()
     {
         var library = new LibrarySystem();
+        string isbn = "9780451524935";
 
-        library.BorrowBook("9780451524935");
-        library.ReturnBook("9780451524935");
-        var actual = library.SearchByISBN("9780451524935");
+        var actualBorrow = library.BorrowBook(isbn);
+        library.ReturnBook(isbn);
+        var actual = library.SearchByISBN(isbn);
 
-        Assert.IsNull(actual.BorrowDate);
+        Assert.IsTrue(actualBorrow, "Book was not borrowed, check if valid ISBN number was used in test.");
+        Assert.IsNull(actual.BorrowDate, "Book's borrow date was not reset.");
     }
 
     [TestMethod]
