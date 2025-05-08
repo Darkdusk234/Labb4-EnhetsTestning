@@ -320,4 +320,14 @@ public class LibrarySystemTests
 
         Assert.IsNull(actual.BorrowDate);
     }
+
+    [TestMethod]
+    public void ReturnBook_ExistingISBNNumberOfANonBorrowedBookInputted_False()
+    {
+        var library = new LibrarySystem();
+
+        var actual = library.ReturnBook("9780451524935");
+
+        Assert.IsFalse(actual);
+    }
 }
