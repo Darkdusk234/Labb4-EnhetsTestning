@@ -98,6 +98,7 @@ namespace Labb4_EnhetsTestning
             if (book != null && book.IsBorrowed)
             {
                 book.IsBorrowed = false;
+                book.BorrowDate = null;
                 return true;
             }
             return false;
