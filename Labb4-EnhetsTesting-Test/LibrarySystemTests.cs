@@ -286,4 +286,15 @@ public class LibrarySystemTests
 
         Assert.AreEqual(time.Date, actual.BorrowDate.Value.Date);
     }
+
+    [TestMethod]
+    public void ReturnBook_ExistingISBNNumberOfABorrowedBookInputted_True()
+    {
+        var library = new LibrarySystem();
+
+        library.BorrowBook("9780451524935");
+        var actual = library.ReturnBook("9780451524935");
+
+        Assert.IsTrue(actual);
+    }
 }
