@@ -364,4 +364,15 @@ public class LibrarySystemTests
 
         Assert.IsFalse(actual);
     }
+
+    [TestMethod]
+    public void IsBookOverdue_InputtingNonExistantISBNNumber_False()
+    {
+        var library = new LibrarySystem();
+        library.BorrowBook("47814981749848091");
+
+        var actual = library.IsBookOverdue("47814981749848091", -1);
+
+        Assert.IsFalse(actual);
+    }
 }
