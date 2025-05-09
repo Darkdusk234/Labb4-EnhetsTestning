@@ -408,4 +408,15 @@ public class LibrarySystemTests
 
         Assert.AreEqual(expected, actual);
     }
+
+    [TestMethod]
+    public void CalculateLateFee_InputtingExistingNotBorrwedBookWithAppropriateLateDays_DecinmalOfZero()
+    {
+        var library = new LibrarySystem();
+        var expected = 0m;
+
+        var actual = library.CalculateLateFee("9780451524935", 5);
+
+        Assert.AreEqual(expected, actual);
+    }
 }
