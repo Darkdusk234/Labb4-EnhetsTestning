@@ -381,6 +381,7 @@ public class LibrarySystemTests
     {
         var library = new LibrarySystem();
         var expected = 2.5m;
+        library.BorrowBook("9780451524935");
 
         var actual = library.CalculateLateFee("9780451524935", 5);
 
