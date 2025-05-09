@@ -29,3 +29,6 @@ Returnerar en bok även om den inte ska det eftersom sök materialet är en tom 
 Returnerar en bok även om den inte ska det eftersom sök materialet är en tom sträng.
 
 [LibrarySystem]/[ReturnBook]/[Rad 101]: Metoden nollställer inte utlåningsdatumet av den returnerade boken.
+
+[LibrarySystem]/[CalculateLateFee]/[Rad 122]: Metoden beräknar inte försenings avgiften på rätt sätt.
+Returnerar dag+avgift istället för dagar*avgift.
