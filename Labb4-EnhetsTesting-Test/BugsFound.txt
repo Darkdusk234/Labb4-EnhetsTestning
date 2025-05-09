@@ -32,3 +32,6 @@ Returnerar en bok även om den inte ska det eftersom sök materialet är en tom 
 
 [LibrarySystem]/[CalculateLateFee]/[Rad 122]: Metoden beräknar inte försenings avgiften på rätt sätt.
 Returnerar dag+avgift istället för dagar*avgift.
+
+[LibrarySystem]/[CalculateLateFee]/[Rad 122]: Metoden har ingen check för om boken är lånad eller inte.
+Returnerar dag*avgift även om boken inte är lånad.
