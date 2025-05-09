@@ -359,7 +359,6 @@ public class LibrarySystemTests
     public void IsBookOverdue_InputtingANotLoanedBook_False()
     {
         var library = new LibrarySystem();
-        library.BorrowBook("9780451524935");
 
         var actual = library.IsBookOverdue("9780451524935", -1);
 
