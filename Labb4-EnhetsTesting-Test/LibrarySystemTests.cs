@@ -343,4 +343,15 @@ public class LibrarySystemTests
 
         Assert.IsTrue(actual);
     }
+
+    [TestMethod]
+    public void IsBookOverdue_InputtingALoanedBookThatIsNotOverdue_False()
+    {
+        var library = new LibrarySystem();
+        library.BorrowBook("9780451524935");
+
+        var actual = library.IsBookOverdue("9780451524935", 10);
+
+        Assert.IsFalse(actual);
+    }
 }
