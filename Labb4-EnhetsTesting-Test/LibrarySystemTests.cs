@@ -334,7 +334,7 @@ public class LibrarySystemTests
     }
 
     [TestMethod]
-    public void IsBookOverdue_InputtingABookThatIsOverdue_True()
+    public void IsBookOverdue_InputtingALoanedBookThatIsOverdue_True()
     {
         var library = new LibrarySystem();
         library.BorrowBook("9780451524935");
