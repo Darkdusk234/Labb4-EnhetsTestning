@@ -375,4 +375,15 @@ public class LibrarySystemTests
 
         Assert.IsFalse(actual);
     }
+
+    [TestMethod]
+    public void CalculateLateFee_InputtingExistingBookWithAppropriateLateDays_CorrectFeeForLateDays()
+    {
+        var library = new LibrarySystem();
+        var expected = 2.5m;
+
+        var actual = library.CalculateLateFee("9780451524935", 5);
+
+        Assert.AreEqual(expected, actual);
+    }
 }
