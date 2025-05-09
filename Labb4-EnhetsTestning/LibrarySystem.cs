@@ -117,6 +117,8 @@ namespace Labb4_EnhetsTestning
             Book book = SearchByISBN(isbn);
             if (book == null)
                 return 0;
+            else if (!book.IsBorrowed)
+                return 0;
 
             decimal feePerDay = 0.5m;
             return daysLate * feePerDay;
